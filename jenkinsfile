@@ -1,10 +1,10 @@
-pipeline{
-agent any
-stages{
-stage('artifactory'){
-steps{
-archiveArtifacts aa : 'out.txt',fingerprint:true
-}
-}
-}
+pipeline {
+  agent any
+  stages {
+    stage ('Archive artifacts') {
+      steps {
+        archiveArtifacts artifacts: 'out.txt', fingerprint: true
+      }
+    }
+  }
 }
