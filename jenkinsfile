@@ -1,7 +1,7 @@
 pipeline{
 agent any
 stages{
-stage('artifactory){
+stage('artifactory'){
 steps{
 archieveArtifacts aa='out.txt',fingerprint=true
 }
