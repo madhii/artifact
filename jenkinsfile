@@ -1,0 +1,10 @@
+pipeline{
+agent any
+stages{
+stage('artifactory){
+steps{
+archieveArtifacts aa='out.txt',fingerprint=true
+}
+}
+}
+}
