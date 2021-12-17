@@ -3,7 +3,7 @@ agent any
 stages{
 stage('artifactory'){
 steps{
-archieveArtifacts aa='out.txt',fingerprint=true
+archiveArtifacts : 'out.txt',fingerprint=true
 }
 }
 }
